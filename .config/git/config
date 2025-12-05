@@ -1,7 +1,7 @@
 [user]
-  name  = bhagwan
-  email = bhagwan@disroot.org
-  signingKey = ~/.ssh/git
+  name  = pepedro12
+  email = celatis@proton.me
+  signingKey = ~/.ssh/id_ed25519
 
 [credential]
   helper =
