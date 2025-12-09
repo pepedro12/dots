@@ -1,6 +1,7 @@
 # $OpenBSD: dot.profile,v 1.5 2018/02/02 02:29:54 yasuoka Exp $
 #
-PATH=$HOME/bin:$HOME/rootfs/bin:$HOME/.cargo/bin:/usr/lib/ccache/bin:/opt/homebrew/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/X11R7/bin:/opt/X11/bin:/opt/local/bin:/usr/pkg/bin:$HOME/.local/bin:$HOME/.local/share/nvim/mason/bin:/var/jb/usr/bin
+PATH=$HOME/bin:$HOME/rootfs/bin:$HOME/.cargo/bin:/usr/lib/ccache/bin:/opt/homebrew/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/X11R7/bin:/opt/X11/bin:/opt/local/bin:/usr/pkg/bin:$HOME/.local/bin:$HOME/.local/share/nvim/mason/bin:/var/jb/usr/bin:$HOME/.rustup/toolchains/nightly-aarch64-apple-darwin/bin
+#:$HOME/.nvm/versions/node/v18.17.0/bin
 MANPATH=$HOME/rootfs/man:/usr/local/share/man:/usr/share/man:/opt/homebrew/share/man:/usr/pkg/man
 #LD_LIBRARY_PATH=$HOME/rootfs/lib:/opt/homebrew/lib:/usr/local/lib:/usr/local/share/lib:/usr/share/lib:/lib:/usr/lib:/usr/X11R6/lib:/usr/X11R7/lib:/opt/X11/lib:/opt/local/lib:/usr/pkg/lib
 export PATH MANPATH HOME TERM
@@ -109,3 +110,6 @@ export GOLF_VIM=/shared/$USER/Applications/nvim-v044/nvim.appimage
 # SSL version should match output of:
 # ❯ xbps-query -l | grep libssl
 export CLR_OPENSSL_VERSION_OVERRIDE=48
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
