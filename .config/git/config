@@ -115,7 +115,7 @@
 
 [alias]
   a     = add
-  acp = "!git add . && git commit -m \"g\" && git push" 
+  acp   = "!git add . && git commit -m \"g\" && git push" 
   b     = branch -vv
   ba    = branch -vv --all
   bd    = branch --delete
